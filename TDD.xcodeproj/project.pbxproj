@@ -16,6 +16,9 @@
 		A9444E54291ECEF800B15F46 /* TDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9444E53291ECEF800B15F46 /* TDDTests.swift */; };
 		A9444E5E291ECEF800B15F46 /* TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9444E5D291ECEF800B15F46 /* TDDUITests.swift */; };
 		A9444E60291ECEF800B15F46 /* TDDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9444E5F291ECEF800B15F46 /* TDDUITestsLaunchTests.swift */; };
+		A9444E6D291ED40400B15F46 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9444E6C291ED40400B15F46 /* Calculation.swift */; };
+		ED83EAA7291EF5B700BA3A2B /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAA6291EF5B700BA3A2B /* FizzBuzz.swift */; };
+		ED83EAA9291EF7CE00BA3A2B /* FizzBuzzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A9444E59291ECEF800B15F46 /* TDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9444E5D291ECEF800B15F46 /* TDDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDUITests.swift; sourceTree = "<group>"; };
 		A9444E5F291ECEF800B15F46 /* TDDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9444E6C291ED40400B15F46 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		ED83EAA6291EF5B700BA3A2B /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
+		ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 				A9444E45291ECEF800B15F46 /* Assets.xcassets */,
 				A9444E47291ECEF800B15F46 /* LaunchScreen.storyboard */,
 				A9444E4A291ECEF800B15F46 /* Info.plist */,
+				A9444E6C291ED40400B15F46 /* Calculation.swift */,
+				ED83EAA6291EF5B700BA3A2B /* FizzBuzz.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -114,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A9444E53291ECEF800B15F46 /* TDDTests.swift */,
+				ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */,
 			);
 			path = TDDTests;
 			sourceTree = "<group>";
@@ -258,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED83EAA7291EF5B700BA3A2B /* FizzBuzz.swift in Sources */,
 				A9444E41291ECEF700B15F46 /* ViewController.swift in Sources */,
 				A9444E3D291ECEF700B15F46 /* AppDelegate.swift in Sources */,
 				A9444E3F291ECEF700B15F46 /* SceneDelegate.swift in Sources */,
+				A9444E6D291ED40400B15F46 /* Calculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9444E54291ECEF800B15F46 /* TDDTests.swift in Sources */,
+				ED83EAA9291EF7CE00BA3A2B /* FizzBuzzTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
