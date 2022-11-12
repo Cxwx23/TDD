@@ -19,6 +19,8 @@
 		A9444E6D291ED40400B15F46 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9444E6C291ED40400B15F46 /* Calculation.swift */; };
 		ED83EAA7291EF5B700BA3A2B /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAA6291EF5B700BA3A2B /* FizzBuzz.swift */; };
 		ED83EAA9291EF7CE00BA3A2B /* FizzBuzzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */; };
+		ED83EAAB291F01A400BA3A2B /* SortedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAAA291F01A400BA3A2B /* SortedSet.swift */; };
+		ED83EAAD291F020500BA3A2B /* SortedSetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAAC291F020500BA3A2B /* SortedSetTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A9444E6C291ED40400B15F46 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 		ED83EAA6291EF5B700BA3A2B /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 		ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTest.swift; sourceTree = "<group>"; };
+		ED83EAAA291F01A400BA3A2B /* SortedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedSet.swift; sourceTree = "<group>"; };
+		ED83EAAC291F020500BA3A2B /* SortedSetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedSetTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 				A9444E4A291ECEF800B15F46 /* Info.plist */,
 				A9444E6C291ED40400B15F46 /* Calculation.swift */,
 				ED83EAA6291EF5B700BA3A2B /* FizzBuzz.swift */,
+				ED83EAAA291F01A400BA3A2B /* SortedSet.swift */,
 			);
 			path = TDD;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				A9444E53291ECEF800B15F46 /* TDDTests.swift */,
+				ED83EAAC291F020500BA3A2B /* SortedSetTest.swift */,
 				ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */,
 			);
 			path = TDDTests;
@@ -268,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED83EAA7291EF5B700BA3A2B /* FizzBuzz.swift in Sources */,
+				ED83EAAB291F01A400BA3A2B /* SortedSet.swift in Sources */,
 				A9444E41291ECEF700B15F46 /* ViewController.swift in Sources */,
 				A9444E3D291ECEF700B15F46 /* AppDelegate.swift in Sources */,
 				A9444E3F291ECEF700B15F46 /* SceneDelegate.swift in Sources */,
@@ -279,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED83EAAD291F020500BA3A2B /* SortedSetTest.swift in Sources */,
 				A9444E54291ECEF800B15F46 /* TDDTests.swift in Sources */,
 				ED83EAA9291EF7CE00BA3A2B /* FizzBuzzTest.swift in Sources */,
 			);
