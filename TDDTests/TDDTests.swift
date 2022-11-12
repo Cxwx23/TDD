@@ -8,19 +8,6 @@
 import XCTest
 @testable import TDD
 
-//problem statement
-//find the sum ,multiplcation , sub, div
-//
-/*
- 
- class or structure
- 
- sum int, int - int
- mult int , int -int
- sub int , int - int
- 
- 
- */
 
 class TDDTests: XCTestCase {
 

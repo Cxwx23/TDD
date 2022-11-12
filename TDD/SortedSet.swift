@@ -7,103 +7,128 @@
 
 import Foundation
 
+protocol Sum: Comparable {
+    static func +(lhs: Self, rhs: Self) -> Self
+}
 
-struct SortedSet {
+extension Int: Sum { }
+
+
+struct SortedSet<T: Sum> {
     
-    var arr: [Int]
+    var arr: [T] = []
     
-    mutating func addElement(num: Int) -> [Int] {
+    init() {}
+    
+    init(with elements: [T]) {
+        arr = elements
+    }
+    
+    /// Adds one element to the set, while maintaining the sets ascending order,
+    /// and ignoring duplicates
+    mutating func addElement(_ element:T) {
         var index = 0
-        let end = arr.count
-        
-        if arr.contains(num) { return arr }
 
-        while index < end {
-            if num < arr[index] {
-                arr.insert(num, at: index)
-                return arr
+        while index < arr.count {
+            let current:T = arr[index]
+            if current == element { return }
+            if element < current {
+                arr.insert(element, at: index)
+                return
             }
             index += 1
         }
         
-        arr.append(num)
-        return arr
+        arr.append(element)
+        return
     }
-        
     
-    mutating func addAll(values: [Int]) -> [Int] {
-        var i = 0
-        var j = 0
-        var result: [Int] = []
-        
-        let sortedValues = values.sorted()
-        
-        while i < arr.count && j < sortedValues.count {
-            if arr[i] == sortedValues[j] {
-                result.append(arr[i])
-                i += 1
-                j += 1
-            } else if arr[i] < sortedValues[j] {
-                result.append(arr[i])
-                i += 1
-            } else {
-                result.append(sortedValues[j])
-                j += 1
+    func inSet(_ element: T) -> Bool {
+        for index in arr {
+            if element == index {
+                return true
             }
         }
-        
-        while i < arr.count {
-            result.append(arr[i])
-            i += 1
-        }
-        
-        while j < sortedValues.count {
-            result.append(sortedValues[j])
-            j += 1
-        }
-        
-        arr = result
-        return arr
+        return false
     }
     
-    
-    mutating func delete(val: Int) -> [Int] {
-        var result: [Int] = []
         
-        for num in arr {
-            if num != val {
-                result.append(num)
+    /// Adds multiple values from an input array, to the set,
+    /// while maintaining ascending order and ignoring any duplicates.
+    mutating func addAll(values: [T]) {
+        if values.count == 0 {
+            return
+        }
+        
+        for val in values {
+            self.addElement(val)
+        }
+        
+        return
+        
+    }
+    
+    /// Deletes a single element from the set.
+    /// If the value is not in the set, the method returns the original set.
+    mutating func delete(value: T) {
+        var result: [T] = []
+        
+        for element in arr {
+            if !(element == value) {
+                result.append(element)
             }
         }
-        
         arr = result
-        return arr
+        
+        return
     }
     
-    
-    mutating func deleteAll() -> [Int] {
-        arr = []
-        return arr
+    /// Deletes all values in the set.
+    mutating func deleteAll() {
+        for e in arr {
+            self.delete(value: e)
+        }
+        
+        return
     }
     
-    
-    mutating func max() -> Int {
+    /// Returns the max value of the set.
+    mutating func max() -> T? {
+        if self.isEmpty() {
+            return nil
+        }
         return arr[arr.count - 1]
     }
     
     
-    mutating func min() -> Int {
+    /// Returns the min value of the set.
+    mutating func min() -> T? {
+        if self.isEmpty() {
+            return nil
+        }
         return arr[0]
     }
     
     
-    mutating func getElementAt(index: Int) -> Int {
+    /// Returns the value at the index specified in the argument.
+    mutating func getElementAt(index: Int) -> T? {
+        if self.isEmpty() {
+            return nil
+        }
         return arr[index]
     }
     
     
-    mutating func getPositionOf(element: Int) -> Int {
+    /// Returns the first index of the element specified in the argument.
+    /// If the element is not in the SortedSet, returns -1
+    mutating func getPositionOf(element: T) -> Int {
         return arr.firstIndex(of: element) ?? -1
     }
+    
+    
+    func isEmpty() -> Bool {
+        return arr.count == 0
+    }
+    
     
 }

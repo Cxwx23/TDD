@@ -21,6 +21,8 @@
 		ED83EAA9291EF7CE00BA3A2B /* FizzBuzzTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */; };
 		ED83EAAB291F01A400BA3A2B /* SortedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAAA291F01A400BA3A2B /* SortedSet.swift */; };
 		ED83EAAD291F020500BA3A2B /* SortedSetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83EAAC291F020500BA3A2B /* SortedSetTest.swift */; };
+		ED8D4C8B292001E300FC5FC8 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8D4C8A292001E300FC5FC8 /* Stack.swift */; };
+		ED8D4C8D292001F300FC5FC8 /* StackTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8D4C8C292001F300FC5FC8 /* StackTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTest.swift; sourceTree = "<group>"; };
 		ED83EAAA291F01A400BA3A2B /* SortedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedSet.swift; sourceTree = "<group>"; };
 		ED83EAAC291F020500BA3A2B /* SortedSetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedSetTest.swift; sourceTree = "<group>"; };
+		ED8D4C8A292001E300FC5FC8 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		ED8D4C8C292001F300FC5FC8 /* StackTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				A9444E4A291ECEF800B15F46 /* Info.plist */,
 				A9444E6C291ED40400B15F46 /* Calculation.swift */,
 				ED83EAA6291EF5B700BA3A2B /* FizzBuzz.swift */,
+				ED8D4C8A292001E300FC5FC8 /* Stack.swift */,
 				ED83EAAA291F01A400BA3A2B /* SortedSet.swift */,
 			);
 			path = TDD;
@@ -128,6 +133,7 @@
 			children = (
 				A9444E53291ECEF800B15F46 /* TDDTests.swift */,
 				ED83EAAC291F020500BA3A2B /* SortedSetTest.swift */,
+				ED8D4C8C292001F300FC5FC8 /* StackTest.swift */,
 				ED83EAA8291EF7CE00BA3A2B /* FizzBuzzTest.swift */,
 			);
 			path = TDDTests;
@@ -275,6 +281,7 @@
 			files = (
 				ED83EAA7291EF5B700BA3A2B /* FizzBuzz.swift in Sources */,
 				ED83EAAB291F01A400BA3A2B /* SortedSet.swift in Sources */,
+				ED8D4C8B292001E300FC5FC8 /* Stack.swift in Sources */,
 				A9444E41291ECEF700B15F46 /* ViewController.swift in Sources */,
 				A9444E3D291ECEF700B15F46 /* AppDelegate.swift in Sources */,
 				A9444E3F291ECEF700B15F46 /* SceneDelegate.swift in Sources */,
@@ -286,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED8D4C8D292001F300FC5FC8 /* StackTest.swift in Sources */,
 				ED83EAAD291F020500BA3A2B /* SortedSetTest.swift in Sources */,
 				A9444E54291ECEF800B15F46 /* TDDTests.swift in Sources */,
 				ED83EAA9291EF7CE00BA3A2B /* FizzBuzzTest.swift in Sources */,
