@@ -13,12 +13,10 @@ class SortedSetTest: XCTestCase {
     var objSortedSet: SortedSet?
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
         objSortedSet = SortedSet(arr: [3, 5, 10])
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         objSortedSet = nil
     }
 
